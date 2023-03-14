@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: `http://https://api.limitless-connection.com/api/v1/`,
+    baseURL: `http://api.limitless-connection.com/api/v1/`,
 });
 
 export default api;

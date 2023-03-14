@@ -121,7 +121,7 @@ const TopSide: FC = () => {
     }
 
     const hiddenAvatar = authState?.profile ? authState?.profile?.avatarHidden : user.data.avatarHidden;
-    // console.log(hiddenAvatar)
+    console.log(hiddenAvatar)
     // console.log(authState?.profile?.avatarHidden, authState, 'avatarHidden')
     return (
         <Box className={styles.topSideBox}>

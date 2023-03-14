@@ -10,7 +10,7 @@ module.exports = withImages({
         disableStaticImages: true
     },
     env: {
-        API_URL: 'http://https://api.limitless-connection.com/api/v1/',
-        BASE_URL: 'http://https://api.limitless-connection.com'
+        API_URL: 'http://api.limitless-connection.com/api/v1/',
+        BASE_URL: 'http://api.limitless-connection.com'
     }
 });
