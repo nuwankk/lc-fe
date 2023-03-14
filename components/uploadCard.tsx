@@ -167,7 +167,7 @@ const UploadCard: FC<Item> = ({ item, getCards }) => {
         const body = new FormData();
         image?.length === 0 ? console.log("error") : body.append("image", image)
         body.append("user", authState.profile.id)
-        await fetch(`http://api.limitless-connection.com/api/v1/users/image/${item.id}/`, {
+        await fetch(`https://api.limitless-connection.com/api/v1/users/image/${item.id}/`, {
             method: "PATCH",
             body: body,
             headers: {

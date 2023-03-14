@@ -158,7 +158,7 @@
             const body = new FormData();
             body.append("user_images[0]image", image);
             body.append("user_images[0]user", authState.profile.id);
-            await fetch(`http://api.limitless-connection.com/api/v1/users/images/${authState.profile.uniqueId}/`, {
+            await fetch(`https://api.limitless-connection.com/api/v1/users/images/${authState.profile.uniqueId}/`, {
                 method: "POST",
                 body: body,
                 headers: {

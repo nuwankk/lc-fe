@@ -572,7 +572,7 @@ export const WorkInfo: FC = () => {
     }, [accses])
 
     const getCards = () => {
-        fetch(`http://api.limitless-connection.com/api/v1/users/images/${authState?.profile?.uniqueId}`, {
+        fetch(`https://api.limitless-connection.com/api/v1/users/images/${authState?.profile?.uniqueId}`, {
             headers: {
                 "Authorization": `Bearer ${accses}`,
             }
@@ -583,7 +583,7 @@ export const WorkInfo: FC = () => {
             .catch(e => {
                 alert(JSON.stringify(e) + "user_images")
             })
-        fetch(`http://api.limitless-connection.com/api/v1/users/videos/${authState?.profile?.uniqueId}`, {
+        fetch(`https://api.limitless-connection.com/api/v1/users/videos/${authState?.profile?.uniqueId}`, {
             headers: {
                 "Authorization": `Bearer ${accses}`,
             }
