@@ -5,7 +5,7 @@ import {store} from "../pages/_app";
 
 
 const authApi = axios.create({
-    baseURL: `http://api.limitless-connection.com/api/v1/`,
+    baseURL: `https://api.limitless-connection.com/api/v1/`,
 });
 
 authApi.interceptors.request.use((config) => {
